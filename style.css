@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+button {
+  border: 1px solid black;
+  outline: 0;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+#todoTitle {
+  margin-right: 10px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.todo-item {
+  display: flex;
+  padding: 10px 15px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.todo-item:hover {
+  background: lightgray;
+}
+
+.todo-item.completed .todo-title {
+  text-decoration: line-through;
+}
+
+.todo-item.completed {
+  background: green;
+  color: white;
+}
+
+.todo-title {
+  flex-grow: 1;
+}
+
+.delete {
+  background: red;
+  color: white;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
